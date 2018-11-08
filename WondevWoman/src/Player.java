@@ -80,6 +80,19 @@ class Player {
             board[rowIndex] = rowAsString.toCharArray();
         }
 
+        /**
+         * Returns a String representation of the GameBoard's data in the following format:
+         *
+         *     0   1   2   3   4   5
+         *    --- --- --- --- --- ---
+         * 0 | 0   0   0   0   0   0
+         * 1 | 0   .   0   0   .   0
+         * 2 | 0   0   1   0   0   0
+         * 3 | 0   .   1   0   .   0
+         * 4 | 0   0   0   1   0   0
+         * 5 | 0   0   0   1   0   0
+         *
+         */
         @Override
         public String toString() {
             String pretty = "   ";
